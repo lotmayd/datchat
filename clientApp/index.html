@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Chat app</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <script type="text/javascript" src="scripts/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="scripts/underscore-min.js"></script>
+    <script type="text/javascript" src="scripts/backbone-min.js"></script>
+    
+    <script type="text/javascript" src="client/clientApp.js"></script>
+
+    <script type="text/javascript" src="scripts/require.js"></script>
+    
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <div id="app_wrapper">
+        <div id="state_initialize" class="app-state">
+            <h1>Loading app</h1>
+            <p>Hold your horses</p>
+        </div>
+        <div id="state_default" class="app-state">
+            <h1>Hello, Chat!</h1>
+            <p>Enter your text bellow</p>
+            <div id="chat-windows-holder">
+            </div>
+            <textarea id="messageInput"></textarea>
+            <button id="messageSubmit" type="submit">Send</button>
+        </div>
+
+        <div id="state_login" class="app-state">
+            <h1>Hello, stranger!</h1>
+            <p>Enter your name:</p>
+        </div>
+    </div>
+</body>
+</html>
